@@ -1,0 +1,499 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ul,ol,li{
+	list-style: none;
+}
+body{
+	font-family:"微软雅黑";
+	font-size: 0.14rem;
+	display: none;
+	
+}
+body,html{
+	width: 100%;
+	height:auto;
+}
+html{
+	font-size: 625%;
+}
+/*head and nav*/
+.wrap{
+	width: 100%;
+}
+.header{
+	width: 6.40rem;
+	height: 0.90rem;
+	background-color:#0259C3;
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	width: 1.30rem;
+	height: 0.48rem;
+	margin-left: 0.25rem;
+	margin-top: 0.20rem;
+	float: left;
+}
+.verticalLine{
+	height: 0.38rem;
+	width: 0 rem;
+	margin-left: 0.10rem;
+	margin-top: 0.27rem;
+	border-left:0.02rem solid #95B9E6;
+	float: left;
+}
+.introduce{
+	position: absolute;
+	left: 1.80rem;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	float: left;
+}
+
+.beingWeb{
+	font-size: 0.18rem;
+	color: #fff;
+}
+.company{
+	font-size: 0.14rem;
+	color: #fff;
+}
+.nav{
+	width: 6.40rem;
+	height: 0.65rem;
+	background-color: #E9E9E9;
+}
+.nav li{
+	float: left;
+	width: 1.12rem;
+	height: 0.62rem;
+	margin: 0.0rem 0.08rem;
+	line-height: 0.65rem;
+	text-align: center;
+}
+
+.nav a{
+	font-size: 0.24rem;
+	color: #333;
+}
+.current{
+	border-bottom: 0.03rem solid #0259C3;
+}
+.nav .current a{
+	color: #0159C3;
+}
+
+.section{
+	width:100%;
+	height: 27.00rem;
+	position: relative;
+	overflow: hidden;
+}
+.linellae{
+	width: 6.40rem;
+	height: 0.60rem;
+	margin-top: 0.10rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+.lien1{
+	width: 2.10rem;
+	position: absolute;
+	top: 0.26rem;
+	left: 0.10rem;
+}
+.lien2{
+	width: 2.00rem;
+	position: absolute;
+	top: 0.26rem;
+	right: 0.08rem;
+}
+.piant{
+	font-size: 0.24rem;
+	position: absolute;
+	top: 0.10rem;
+	left: 2.40rem;
+}
+/*-------HTML5行业前景----*/
+.market{
+	width: 6.00rem;
+	height: 3.65rem;
+	top: 0.52rem;
+	left: 0.20rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+#txt1{
+	width:5.90rem ;
+	height: 1.00rem;
+	top: 2%;
+	
+	color: gray;
+	line-height: 0.26rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+.font{
+	font-size: 0.12rem;
+	
+}
+.png_03{
+	position: absolute;
+	width: 5.21rem;
+	height: 2.46rem;
+	top: 32%;
+	left: 0%;
+}
+
+.linellae2{
+	width: 6.40rem;
+	height: 0.60rem;
+	top: 4.20rem;
+	position: absolute;
+	
+}
+/*-------HTML5课程大纲----*/
+.course{
+	width: 6.00rem;
+	height: 7.00rem;
+	top: 4.80rem;
+	left: 0.20rem;
+	position: relative;
+	/*border: 1px solid black;*/
+	
+}
+.font1{
+	width: 5.50rem;
+	height: 1.10rem;
+	position: absolute;
+	top: 0.10rem;
+	left: 0.20rem;
+	color: gray;
+}
+.linellae3{
+	width: 6.40rem;
+	height: 0.60rem;
+	top: 11.53rem;
+	position: absolute;
+	
+}
+.lienw{
+	width: 1.80rem;
+	position: absolute;
+	top: 0.26rem;
+	right: 0.08rem;
+}
+
+.phase{
+	width: 5.83rem;
+	height: 5.30rem;
+	position: absolute;
+	top: 1.30rem;
+	left:0.08rem;
+
+}
+.phase img{
+	position: absolute;
+	width: 5.78rem;
+	height: 5.25rem;
+	top: 2%;
+}
+
+/*-------名师助你 一臂之力----*/
+.teaching{
+	width: 6.15rem;
+	height: 3.55rem;
+	top: 5.00rem;
+	left: 0.12rem;
+	color: gray;
+	/*border: 1px solid black;*/
+	position: relative;
+	text-align: center;
+	
+}
+.teaching ul{
+	width: 6.10rem;
+	height: 2.35rem;
+	position: absolute;
+	top: 31%;
+	left: 0.08rem;
+	/*border: 1px solid black;*/
+}
+.p1{
+	text-align: center;
+}
+.p2{
+	/*position: absolute;*/
+	text-align: center;
+	/*margin: auto;*/
+	/*left:146px;*/
+}
+.imgs{
+	position: absolute;
+	bottom: 0.00rem;
+}
+.teaching ul li{
+	width: 1.30rem;
+	height: 2.32rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+.teaching ul li img{
+	width: 1.28rem;
+	height: 2.30rem;
+}
+.teaching ul li:nth-child(1){
+	left: -0.11rem;
+}
+.teaching ul li:nth-child(2){
+	left: 1.52rem;
+}
+.teaching ul li:nth-child(3){
+	right: 1.68rem;
+}
+.teaching ul li:nth-child(4){
+	right: 0.12rem;
+}
+.linellae4{
+	width: 6.40rem;
+	height: 0.60rem;
+	top: 15.43rem;
+	position: absolute;
+	
+}
+.usajk{
+	font-size: 0.25rem;
+	position: absolute;
+	text-align: center;
+	top: 0.10rem;
+	left: 2.65rem;
+}
+/*-------学员作品----*/
+.production{
+	width: 6.15rem;
+	height: 3.40rem;
+	top: 5.44rem;
+	left: 0.15rem;
+	/*border: 1px solid black;*/
+	position: relative;
+}
+.imga{
+	width: 2.81rem;
+	height: 1.63rem;
+	margin: 0.00rem 0.06rem 0.06rem 0.00rem;
+	float: left;
+}
+.imgb{
+	width: 2.08rem;
+	height: 1.63rem;
+	margin: 0.00rem 0.06rem 0.06rem 0.00rem;
+	float: left;
+}
+.imgc{
+	width: 1.12rem;
+	height: 1.63rem;
+	margin: 0.00rem 0.00rem 0.06rem 0.01rem;
+	float: left;
+}
+.imgd{
+	width: 2.10rem;
+	height: 1.63rem;
+	margin: 0.00rem 0.06rem 0.00rem 0.00rem;
+	float: left;
+}
+.imge{
+	width: 1.13rem;
+	height: 1.63rem;
+	margin: 0.00rem 0.06rem 0.00rem 0.00rem;
+	float: left;
+}
+.imgf{
+	width: 2.80rem;
+	height: 1.63rem;
+	margin: 0.00rem 0.00rem 0.00rem 0.00rem;
+	float: left;
+}
+.linellae5{
+	width: 6.40rem;
+	height: 0.60rem;
+	top: 19.60rem;
+	position: absolute;
+	
+}
+/*-------我们的优势----*/
+.advantage{
+	width: 6.00rem;
+	height: 6.40rem;
+	top: 6.33rem;
+	left: 0.15rem;
+	position: relative;
+	/*border: 1px solid black;*/
+}
+.jiuye{
+	width: 6.00rem;
+	height: 1.25rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+
+.jiuye img{
+	position: absolute;
+	width: 0.96rem;
+	height: 0.96rem;
+	left: 0.20rem;
+	top: 0.10rem;
+}
+.jiuye a{
+	font-size: 0.24rem;
+	
+}
+.jiuye p{
+	color: gray;
+	position: absolute;
+	width: 4.50rem;
+	height: 0.60rem;
+	left: 1.38rem;
+	top: 0.50rem;
+}
+.zhid{
+	position: absolute;
+	left:1.38rem;
+	top: 0.10rem;
+}
+
+.jiuye2{
+	width: 6.00rem;
+	height: 1.25rem;
+	top: 1.30rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+
+.jiuye2 img{
+	position: absolute;
+	width: 0.96rem;
+	height: 0.96rem;
+	left: 0.20rem;
+	top: 0.10rem;
+}
+.jiuye2 a{
+	font-size: 0.24rem;
+	
+}
+.jiuye2 p{
+	color: gray;
+	position: absolute;
+	width: 4.50rem;
+	height: 0.60rem;
+	left: 1.38rem;
+	top: 0.50rem;
+}
+.zhid2{
+	position: absolute;
+	left:1.38rem;
+	top: 0.10rem;
+}
+
+.jiuye3{
+	width: 6.00rem;
+	height: 1.25rem;
+	top: 2.60rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+
+.jiuye3 img{
+	position: absolute;
+	width: 0.96rem;
+	height: 0.96rem;
+	left: 0.20rem;
+	top: 0.10rem;
+}
+.jiuye3 a{
+	font-size: 0.24rem;
+	
+}
+.jiuye3 p{
+	color: gray;
+	position: absolute;
+	width: 4.50rem;
+	height: 0.60rem;
+	left: 1.38rem;
+	top: 0.50rem;
+}
+.zhid3{
+	position: absolute;
+	left:1.38rem;
+	top: 0.10rem;
+}
+
+.jiuye4{
+	width: 6.40rem;
+	height: 1.25rem;
+	top: 3.90rem;
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+
+.jiuye4 img{
+	position: absolute;
+	width: 0.96rem;
+	height: 0.96rem;
+	left: 0.20rem;
+	top: 0.10rem;
+}
+.jiuye4 a{
+	font-size: 0.24rem;
+	
+}
+.jiuye4 p{
+	color: gray;
+	position: absolute;
+	width: 4.50rem;
+	height: 0.60rem;
+	left: 1.38rem;
+	top: 0.50rem;
+}
+.zhid4{
+	position: absolute;
+	left:1.38rem;
+	top: 0.10rem;
+}
+
+
+/*--底部样式--*/
+.bottom{
+			width: 6.40rem;
+			height: 0.95rem;
+			background-color:#2a2a2a;
+			position: fixed;
+			bottom: 0;
+		}
+		.bottom .phone{
+			width: 2.15rem;height: 0.72rem;
+			margin: auto 0.35rem;
+			display: inline-block;
+		}
+		.phone img ,.qq img{
+			width: 2.15rem;height: 0.72rem;
+			top: 0.10rem;
+			position: absolute;
+		}
+		.bottom .center{
+			display: inline-block;
+			margin:0.00rem 0.35rem 0.00rem 0.15rem;
+		}
+		.bottom .qq{
+			width: 2.15rem;height: 0.72rem;
+			margin: auto ;
+			display: inline-block;
+		}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title>获奖名单</title>
+		<link rel="stylesheet" href="css/style4.css" />
+		<script type="text/jscript" src="js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div id="page">
+			<img src="img/logo.png" id="logo" alt="" />
+			<img src="img/mingdan.png" class="title3" alt="" />
+			<img src="img/line.png" class="line1" alt="" />
+			<!--比例：15.6   16.5 25.6  26。5    总高 36  高5。9-->
+			<div class="list">
+				<p>
+					<span></span>
+					<span>姓名</span>
+					<span>电话</span>
+					<span>奖品</span>
+				</p>
+				<ul id="col1" class="col1">
+					<li></li>
+				</ul>
+				<ul id="col2" class="col2">
+					<li></li>
+				</ul>
+				<ul id="col3" class="col3">
+					<li></li>
+				</ul>
+				<ul id="col4" class="col4">
+					<li></li>
+				</ul>
+			</div>
+			
+			<img src="img/line.png" class="line2" alt="" />
+			<p class="btn prev" id="prev"><上一页</p>
+			<p class="btn next" id="next">下一页></p>
+			<img src="img/line.png" class="line3" alt="" />
+			<a href="index.html"><input type="button" id="btn3" class="ipt btn3" value="马上参与抽奖 开启欧洲之旅 >" /> </a>
+			<img src="img/football.png" id="ball" alt="" />
+		</div>
+	<script src="js/contro.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+                $.ajax({
+                    url:'http://sjz.bokanedu.com/tgr/api/?day=52-2&type=zj',
+                    success:function(d){
+                        var data=eval('('+d+')');
+                        console.log(eval('('+d+')'));
+                        window.localStorage.setItem("data",d);
+                        var HTML0 = "";
+                        var HTML="";
+                        var HTML1="";
+                        var HTML2 = "";
+                        for(var i=0;i<data.data.length;i++){
+                        	HTML0+="<li><span class='number'>0"+(i+1)+"</span> 期</li>";
+                            HTML+="<li>"+data.data[i].name+"</li>";
+                            HTML1+= "<li>"+data.data[i].tele+"</li>";
+                            HTML2+= "<li>"+data.data[i].gift+"</li>";
+                        }
+                        $("#col1").html(HTML0);
+                        $("#col2").html(HTML);
+                        $("#col3").html(HTML1);
+                        $("#col4").html(HTML2);
+                        $("#col1 li:gt(8)").hide();
+                        $("#col2 li:gt(8)").hide();
+                        $("#col3 li:gt(8)").hide();
+                        $("#col4 li:gt(8)").hide();
+                    }
+                })
+                $("#next").on("click",function(){
+                     var data2=window.localStorage.getItem("data")
+                        var data=eval('('+data2+')');
+                        console.log(eval('('+data2+')'));
+                        var HTML0 = "";
+                        var HTML="";
+                        var HTML1="";
+                        var HTML2 = "";
+                        for(var i=0;i<data.data.length;i++){
+                        	HTML0+="<li><span class='number'>"+(i+1)+"</span> 期</li>";
+                            HTML+="<li>"+data.data[i].name+"</li>";
+                            HTML1+= "<li>"+data.data[i].tele+"</li>";
+                            HTML2+= "<li>"+data.data[i].gift+"</li>";
+                        }
+                        $("#col1").html(HTML0);
+                        $("#col2").html(HTML);
+                        $("#col3").html(HTML1);
+                        $("#col4").html(HTML2);
+                        $("#col1 li:lt(9)").hide();
+                        $("#col2 li:lt(9)").hide();
+                        $("#col3 li:lt(9)").hide();
+                        $("#col4 li:lt(9)").hide();
+                    //位置改变
+                    	change();
+            	})
+                ,
+                $("#prev").on("click",function(){
+                     var data2=window.localStorage.getItem("data")
+                        var data=eval('('+data2+')');
+                        console.log(eval('('+data2+')'));
+                        var HTML0 ="";
+                        var HTML="";
+                        var HTML1="";
+                        var HTML2 = "";
+                        for(var i=0;i<data.data.length;i++){
+                        	HTML0+="<li><span class='number'>0"+(i+1)+"</span> 期</li>";
+                            HTML+="<li>"+data.data[i].name+"</li>";
+                            HTML1+= "<li>"+data.data[i].tele+"</li>";
+                            HTML2+= "<li>"+data.data[i].gift+"</li>";
+                        }
+                        $("#col1").html(HTML0);
+                        $("#col2").html(HTML);
+                        $("#col3").html(HTML1);
+                        $("#col4").html(HTML2);
+                        $("#col1 li:gt(8)").hide();
+                        $("#col2 li:gt(8)").hide();
+                        $("#col3 li:gt(8)").hide();
+                        $("#col4 li:gt(8)").hide();
+                        //还原位置
+                        resetP();
+            	})
+                
+                function change(){
+                	$(".line2").css({
+                		top:"48%"
+                	});
+                	$(".btn").css({
+                		top:"50%"
+                	})
+                	$(".btn3").css({
+                		top:"56%"
+                	})
+                }
+                function resetP(){
+                	$(".line2").css({
+                		top:"60%"
+                	});
+                	$(".btn").css({
+                		top:"62%"
+                	})
+                	$(".btn3").css({
+                		top:"68%"
+                	})
+                }
+		})
+	</script>
+	</body>
+</html>

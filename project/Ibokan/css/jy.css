@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ul,ol,li{
+	list-style: none;
+}
+body{
+	font-family:"微软雅黑";
+	display: none;
+	
+}
+html {font-size: 625%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 0.14rem;/*1.4 × 10px = 14px */}
+		
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 6.40rem;
+}
+.header{
+	width: 6.40rem;
+	height: 0.90rem;
+	background-color:#0259C3;
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	width: 1.30rem;
+	height: 0.48rem;
+	margin-left: 0.25rem;
+	margin-top: 0.20rem;
+	float: left;
+}
+.verticalLine{
+	height: 0.38rem;
+	width: 0.0rem;
+	margin-left: 0.10rem;
+	margin-top: 0.27rem;
+	border-left:0.02rem solid #95B9E6;
+	float: left;
+}
+.introduce{
+	position: absolute;
+	left: 1.80rem;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	float: left;
+}
+.beingWeb{
+	font-size: 0.18rem;
+	color: #fff;
+}
+.company{
+	font-size: 0.14rem;
+	color: #fff;
+}
+.nav{
+	width: 6.40rem;
+	height: 0.65rem;
+	background-color: #E9E9E9;
+}
+.nav li{
+	float: left;
+	width: 0.90rem;
+	height: 0.62rem;
+	margin: 0.0rem 0.19rem;
+	line-height: 0.65rem;
+	text-align: center;
+}
+.nav a{
+	font-size: 0.24rem;
+	color: #333;
+}
+.current{
+	border-bottom: 0.03rem solid #0259C3;
+}
+.nav .current a{
+	color: #0159C3;
+}
+/* 导航结束 */
+/*center*/
+.xueyuan{
+	width: 6.10rem;
+	height: 6.94rem;
+	margin:0.34rem auto 0.0rem;
+}
+.xueyuan ul{
+	overflow: hidden;
+}
+.xueyuan li{
+	float: left;
+}
+.xueyuan_nav li{
+	float: left;
+}
+.xueyuan_nav_2{
+	margin-left: 0.16rem;
+	margin-top: 0.60rem;
+	height: 0.44rem;
+}
+.xueyuanjiuye{
+	margin-top: 0.02rem;
+	margin-left: 0.10rem;
+	font-size: 0.24rem;
+}
+.xueyuan_nav .orgen{
+	width: 0.04rem;
+	height: 0.32rem;
+	background-color: orange;
+}
+.xueyuan_tu{
+	margin-top: 0.20rem;
+	margin-left: 0.02rem;
+	
+}
+.xueyuan_tu img{
+	width: 1.89rem;
+	height: 1.89rem;
+	display: block;
+}
+.xueyuan_zi{
+	font-size: 0.16rem;
+	position: absolute;
+	display: block;
+	top: 1.53rem;
+	left: 0.0rem;
+	width: 1.89rem;
+	height: 0.36rem;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	line-height: 0.36rem;
+	text-indent: 0.06rem;
+}
+.xueyuan_zi span{
+	color:#f9f601;
+}
+.xueyuan_tu li{
+	width: 1.89rem;
+	height: 1.89rem;
+	position: relative;
+}
+.li2{
+	margin-left: 0.20rem;
+}
+.jiuyexiangxi{
+	width: 6.10rem;
+	height: 4.21rem;
+	margin-top: 0.44rem;
+	text-align: center;
+	
+}
+.jiuyexiangxi_nav{
+	font-size: 0.22rem;
+}
+.jiuyexiangxi_xiangx{
+	width: 6.06rem;
+	height: 3.11rem;
+	border: 0.02rem solid #dedede;
+	border-top: none;
+	overflow: hidden;
+}
+.jiuyexiangxi_xiangx1{
+	width: 6.10rem;
+}
+.jiuyexiangxi_nav_1{
+	width: 6.06rem;
+	margin-top: 0.22rem;
+	background-color: #eeeeee;
+	border: 0.02rem solid #dedede;
+	border-bottom:none;
+	font-size: 0.16rem;
+}
+.jiuyexiangxi_xiangx1 ul{
+	border-top: 0.02rem solid #dedede;
+}
+.jiuyexiangxi li{
+	line-height: 0.50rem;
+	font-size: 0.16rem;
+}
+.xingm{
+	width: 0.98rem;
+	height: 0.50rem;
+	border-right: 0.02rem solid #dedede;
+}
+.zhuangy{
+	width: 1.38rem;
+	height: 0.50rem;
+	border-right: 0.02rem solid #dedede;
+}
+.jiuyedw{
+	width: 2.56rem;
+	height: 0.50rem;
+	border-right: 0.02rem solid #dedede;
+}
+.xingz{
+	width: 1.08rem;
+	height: 0.50rem;
+}
+.cet_xia{
+	width: 6.40rem;
+	/*height: 970px;*/
+	border-top: 0.01rem solid #e5e5e5;
+}
+.cet_xia ul{
+	width: 6.12rem;
+	height: 1.29rem;
+	overflow: hidden;
+	border-bottom: 0.01rem solid #E5E5E5;
+	margin: auto;
+}
+.cet_xia li{
+	float: left;
+	height: 1.00rem;
+	width:1.50rem;
+	margin-top: 0.16rem;
+	margin-left: 0.02rem;
+}
+.cet_xia .cet_xia_you{
+	margin-left: 0.12rem;
+	margin-top: 0.17rem;
+}
+.cet_xia img{
+	display: block;
+	width:1.50rem;
+	height: 1.00rem;
+}
+.cet_xia .cet_xia_you{
+	width: 4.42rem;
+	height: 1.00rem;
+	line-height: 0.26rem;
+}
+.cet_xia_you h4{
+	font-size: 0.20rem;
+}
+.cet_xia_you span{
+	color: #b6b6b6;
+	font-size: 0.16rem;
+}
+.cet_xia_you p{
+	color: #d9d9d9;
+	font-size: 0.14rem;
+}
+.cet_xia .cet_xia_border{
+	border: none;
+}
+.kong{
+	width: 6.40rem;
+	height: 0.80rem;
+}
+/*底部*/
+.bottom{
+	width: 6.40rem;
+	height: 0.80rem;
+	background-color:#2a2a2a;
+	position: fixed;
+	bottom: 0;
+}
+.bottom .phone{
+	width: 2.15rem;height: 0.72rem;
+	margin: auto 0.35rem;
+	display: inline-block;
+}
+.phone img ,.qq img{
+	width: 2.15rem;height: 0.72rem;
+}
+.bottom .center{
+	display: inline-block;
+	height: 0.8rem;
+	margin:0.0rem 0.35rem 0.0rem 0.15rem;
+}
+.bottom .qq{
+	width: 2.15rem;height: 0.72rem;
+	margin: auto ;
+	display: inline-block;
+}

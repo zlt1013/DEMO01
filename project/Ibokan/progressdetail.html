@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>项目详情</title>
+	<meta name="viewport" content="width=device-width, height=device-width,initial-scale=1,user-scalable=no"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script type="text/javascript">
+		$(document).ready(function(){
+			var wid=document.documentElement.clientWidth;
+				var scale=wid/640
+				document.body.style.zoom=scale;
+			$("body").css({display:"block"});
+				
+		})
+		$(window).resize(function(){
+		  	var wid=document.documentElement.clientWidth;
+			var scale=wid/640 
+			// document.body.style.webkitZoom=scale;
+			document.body.style.zoom=scale;
+			$("body").css({display:"block"});
+			
+		});
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/bottom.css">
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		html{
+			font-size: 87.5%;
+		}
+		.content{
+			padding: 0 28px  0 28px;
+		}
+		h3{font-size: 20px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		p{
+			font-size: 14px;
+			color: #656565;
+		}
+		.blank{
+			height: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+			<a href="index.html"><img class="logo" src="img/logo.png"></a>
+			<div class="verticalLine"></div>
+			<div class="introduce">
+				<p ><a href="###" class="beingWeb">北京官网</a></p>
+				<p ><a href="###" class="company" >蓝色光标集团旗下企业</a></p>
+			</div>
+	</div>           
+	<div class="nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="current"><a href="course.html">课程</a></li>
+				<li><a href="jiuye.html">就业</a></li>
+				<li><a href="teachers.html">师资</a></li>
+				<li><a href="hj.html">环境</a></li>
+				<li><a href="us.html">我们</a></li>
+			</ul>
+	</div>
+	<div class="content">
+		<h3>E家教，首款找家教的应用</h3>
+		<p>如果孩子在做作业时遇到不会做的题，马上就有老师帮他答疑解惑，他就不会有作业的压力如果不知道从哪里找好老师给孩子做辅导，就用E家教。</p>
+		<img src="img/detail-lyc.gif">
+		<p>最便捷的找家教软件—E家教，E家教为学校教师和找家教的家长量身定做，学生家长可以通过APP快捷方便的直接找到身边的满意的家教老师，学校的老师也可以通过APP安全便捷的。</p>
+		<h3>家长版</h3>
+		<p>- 小学课程、中学课程、高中课程，家长随心所欲的挑选；<br>
+- 数学、英语、历史、地理……各门课程家长可以量身为孩子专属定制；<br>
+- 地图定位，为你找到就在你身边的好老师，不去辅导班多花钱；<br>
+- 姓名、电话、微博、学生评价……教师信息一目了然，更多权威认证，更多保障；找到想找    辅导的学生，从而专心从事学生教研辅导工作。</p>
+		<h3>学生版</h3>
+		<p>- 轻松注册、微博、微信和QQ同步登录；<br>
+- 采用人机交互云平台，更加方便的与学生线上沟通交流；<br>
+- 分学科，分年级，更加方便的编辑个性信息，让学生更加快捷的找合适的老师；</p>
+		<h3>E家教，已经上线，请在AppStore搜索“E家教”……</h3>
+	</div>
+	<div class="blank"></div>
+	<div class="bottom">
+		<a href="#" class="phone"><img src="img/zx-dianhua.png"></a>
+		<img src="img/center-lyc.gif" class="center">
+		<a href="#" class="qq"><img src="img/zx-qq.png"></a>
+	</div>
+</body>
+</html>

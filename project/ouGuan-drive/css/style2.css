@@ -1,0 +1,120 @@
+*{margin:0px; padding:0px;}
+body,html{
+	width:100%;
+	height:100%;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+#page{
+	width:640px;
+	height:1136px;
+	background:url(../img/background.png) 0px 0px no-repeat;
+	/*background-size:100% 100%;*/
+	overflow:hidden;
+}
+#logo{
+	position:absolute;
+	left:24px;
+	top:0;
+	width:384px;
+	height:196px;
+}
+#ball{
+	width:640px;
+	height:408px;
+	position: absolute;
+	top:732px;
+	left:0px;
+	background:url(../img/football.png) no-repeat;
+}
+.title1{
+	width:512px;
+	height:56px;
+	position:absolute;
+	top:260px;
+	left:64px;
+}
+.line1{
+	width:512px;
+	height:4px;
+	position:absolute;
+	top:340px;
+	left:64px;
+}
+.word2{
+	width:448px;
+	height:68px;
+	position:absolute;
+	top:364px;
+	left:102px;
+}
+.ipt{
+	position: absolute;
+	-webkit-transform: skew(-25deg);
+	transform: skew(-25deg);
+	background:-webkit-linear-gradient(left top,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.9) 36%,rgba(0,0,0,0.6) 100%) ;
+	border:2px solid white; 
+	font-size:30px;
+	color:whitesmoke;
+	font-weight:800;
+	text-align:center;
+	z-index: 99;
+}
+#ipt1{
+	width:512px;
+	height:56px;
+	top:454px;
+	left:70px;
+}
+#ipt2{
+	width:512px;
+	height:56px;
+	top:534px;
+	left:70px;
+}
+.word3{
+	width:410px;
+	height:22px;
+	position:absolute;
+	top:624px;
+	left:108px;
+}
+.line2{
+	width:512px;
+	height:4px;
+	position:absolute;
+	top:658px;
+	left:64px;
+}
+#btn3{
+	width:512px;
+	height:56px;
+	position: absolute;
+	top:682px;
+	left:64px;
+	/*padding-left:3%;*/
+	font-size: 28px;
+}
+#btn4{
+	width:230px;
+	height:51px;
+	position: absolute;
+	top:760px;
+	left:64px;
+	font-size:24px;
+}
+#btn5{
+	width:230px;
+	height:51px;
+	position: absolute;
+	top:760px;
+	left:320px;
+	font-size:24px;
+}
+
+
+
+
+

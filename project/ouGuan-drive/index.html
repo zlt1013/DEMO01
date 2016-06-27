@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<link rel="stylesheet" href="css/style1.css" />
+	</head>
+	<body>
+		<div id="page">
+			<img src="img/logo.png" id="logo" alt="" />
+			<img src="img/title1.png" class="title1" alt="" />
+			<img src="img/line.png" class="line1" alt="" />
+			<img src="img/word1.png" class="word1" alt="" />
+			<img src="img/line.png" class="line2" alt="" />
+			<img src="img/shijia.png" id="btn1" alt="" />
+			<img src="img/btn02.png" id="btn2" alt="" />
+			<img src="img/football.png" id="ball" alt="" />
+		</div>
+	<script src="js/contro.js"></script>
+	<script>
+		window.addEventListener("load",function(){
+			var btn1 = document.getElementById("btn1");
+			var btn2 = document.getElementById("btn2");
+			btn1.onclick = function(){
+				window.location.href = "reservation.html";
+			}
+			btn2.onclick = function(){
+				window.location.href = "activityDetail.html";
+			}
+		},false)
+		
+	</script>
+	</body>
+</html>

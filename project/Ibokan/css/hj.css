@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ul,ol,li{
+	list-style: none;
+}
+body{
+	font-family:"微软雅黑";
+	display: none;
+	
+}
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 1.4rem;/*1.4 × 10px = 14px */}
+		
+body,html{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 640px;
+	 /*height: 1030px;*/ 
+}
+.header{
+	width: 640px;
+	height: 90px;
+	background-color:#0259C3;
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	width: 130px;
+	height: 48px;
+	margin-left: 25px;
+	margin-top: 20px;
+	float: left;
+}
+.verticalLine{
+	height: 38px;
+	width: 0px;
+	margin-left: 10px;
+	margin-top: 27px;
+	border-left:2px solid #95B9E6;
+	float: left;
+}
+.introduce{
+	position: absolute;
+	left: 180px;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	float: left;
+}
+.beingWeb{
+	font-size: 18px;
+	color: #fff;
+}
+.company{
+	font-size: 14px;
+	color: #fff;
+}
+.nav{
+	width: 640px;
+	height: 65px;
+	background-color: #E9E9E9;
+}
+.nav li{
+	float: left;
+	width: 90px;
+	height: 62px;
+	margin: 0px 8px;
+	line-height: 65px;
+	text-align: center;
+}
+.nav a{
+	font-size: 24px;
+	color: #333;
+}
+.current{
+	border-bottom: 3px solid #0259C3;
+}
+.nav .current a{
+	color: #0159C3;
+}
+/* 导航结束 */
+/*center*/
+.cet ul{
+	overflow: hidden;
+}
+.cet{
+	margin: auto;
+	width: 615px;
+	height: 940px;
+}
+.cet li{
+	float: left;
+	/*margin-left: 16px;*/
+	margin-top: 16px;
+	position: relative;
+}
+.cet img{
+	display: block;
+}
+.cet span{
+	display: block;
+	width: 300px;
+	height:31px;
+	position: absolute;
+	top: 169px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	line-height: 31px;
+}
+.lef{
+	margin-left: 15px;
+}
+/*底部*/
+.bottom{
+	width: 640px;
+	height: 80px;
+	background-color:#2a2a2a;
+	position: fixed;
+	bottom: 0;
+}
+.bottom .phone{
+	width: 215px;height: 72px;
+	margin: auto 35px;
+	display: inline-block;
+}
+.phone img ,.qq img{
+	width: 215px;height: 72px;
+}
+.bottom .center{
+	display: inline-block;
+	margin:0px 35px 0px 15px;
+}
+.bottom .qq{
+	width: 215px;height: 72px;
+	margin: auto ;
+	display: inline-block;
+}

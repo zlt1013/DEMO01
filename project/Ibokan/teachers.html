@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>师资</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bottom.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	 <script type="text/javascript">
+		$(document).ready(function(){
+			var wid=document.documentElement.clientWidth;
+				var scale=wid/640
+				document.body.style.zoom=scale;
+			$("body").css({display:"block"});
+				
+		})
+		$(window).resize(function(){
+		  	var wid=document.documentElement.clientWidth;
+			var scale=wid/640 
+			// document.body.style.webkitZoom=scale;
+			document.body.style.zoom=scale;
+			$("body").css({display:"block"});
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="controller">
+		<div>
+			<div class="header">
+				<a href="index.html"><img class="logo" src="img/logo.png"></a>
+				<div class="verticalLine"></div>
+				<div class="introduce">
+					<p ><a href="###" class="beingWeb">北京官网</a></p>
+					<p ><a href="###" class="company" >蓝色光标集团旗下企业</a></p>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="course.html">课程</a></li>
+					<li><a href="jiuye.html">就业</a></li>
+					<li class="current"><a href="teachers.html">师资</a></li>
+					<li><a href="hj.html">环境</a></li>
+					<li><a href="us.html">我们</a></li>
+				</ul>
+			</div>
+		</div>		
+		<!-- 导航 end-->
+		<div class="content">
+			<h2 class="cont-title">移动开发名师</h2>
+			<dl class="famous famous01">
+				<dt class="th-01"><a href=""></a></dt>
+				<dd>
+					<h3><a href="teacherDetail.html">徐赢</a></h3>
+					<span>博看文思iOS教学培训中心，北京校区iOS培训经理徐赢</span><br>
+					<span>精通Objective-C、Xcode开发工具、MRC、ARC、对MVC模式有深入的了解</span>
+				</dd>
+			</dl>
+			<dl class="famous">
+				<dt class="th-02"></dt>
+				<dd>
+					<h3><a href="teacherDetail.html">陶国荣</a></h3>
+					<span>陶国荣，博看文思HMTL5高级讲师，资深Web技术专家，10余年开发经验，是国内较早从事Web开发的一线技术人员和培训讲师</span>
+				</dd>
+			</dl>
+			<dl class="famous">
+				<dt class="th-03"></dt>
+				<dd>
+					<h3><a href="teacherDetail.html">郭檀伟</a></h3>
+					<span>博看文思iOS培训中心高级iOS讲师，精通iOS游戏开发，对Objective-C造诣很深。个人有很多款游戏在APP Store上架，并参与编写多本iPhone教材。</span>
+				</dd>
+			</dl>
+			<dl class="famous">
+				<dt class="th-04"></dt>
+				<dd>
+					<h3><a href="teacherDetail.html">曾维军</a></h3>
+					<span>博看文思HTML5培训高级讲师，前微软云适配高级HTML5开发工程师，3年前端开发工作经验，曾带队完成IDG投资集团、微软云适配、广东中山公路局等国家级前段项目开发工作。</span>
+				</dd>
+			</dl>
+			<dl class="famous">
+				<dt class="th-05"></dt>
+				<dd>
+					<h3><a href="teacherDetail.html">闫园园</a></h3>
+					<span>博看文思HTML5培训高级讲师，在技术方面，园园姐精通PHP、MySQL、HTML5、CSS3、JavaScript、JQuery、Ajax，最热爱的是HTML5的Canvas。</span>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="bottom">
+		<a href="#" class="phone"><img src="img/zx-dianhua.png"></a>
+		<img src="img/center-lyc.gif" class="center">
+		<a href="#" class="qq"><img src="img/zx-qq.png"></a>
+	</div>
+</body>
+<script>
+	window.onload = function(){
+		var wid = document.documentElement.clientWidth;
+		var scale = wid/640;
+		document.body.style.zoom = scale;
+	}
+	window.onresize = function(){
+		var wid = document.documentElement.clientWidth;
+		var scale = wid/640;	
+		document.body.style.zoom = scale;
+	}
+
+</script>
+</html>

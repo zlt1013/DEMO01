@@ -1,0 +1,147 @@
+*{margin:0px; padding:0px;}
+body,html{
+	width: 100%;
+	height:100%;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+#page{
+	width:100%;
+	height:100%;
+	background:url(../img/background.png) no-repeat;
+	background-size:100% 100%;
+}
+#logo{
+	height:15%;
+	margin-left:5%;
+}
+#ball{
+	width:100%;
+	height:36%;
+	position: absolute;
+	bottom:0px;
+	left:0px;
+}
+.title3{
+	width:40%;
+	height:5%;
+	position:absolute;
+	top:18%;
+	left:30%;
+}
+.line1{
+	width:80%;
+	position:absolute;
+	top:24%;
+	left:10%;
+}
+.line2{
+	width:80%;
+	position:absolute;
+	top:60%;
+	left:10%;
+}
+.line3{
+	width:80%;
+	position:absolute;
+	top:66%;
+	left:10%;
+}
+.line3_1{
+	width:80%;
+	position:absolute;
+	top:54%;
+	left:10%;
+}
+.ipt{
+	width:80%;
+	height:6%;
+	position: absolute;
+	-webkit-transform: skew(-25deg);
+	transform: skew(-25deg);
+	background:-webkit-linear-gradient(left top,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.9) 36%,rgba(0,0,0,0.6) 100%) ;
+	border:2px solid white; 
+	color:whitesmoke;
+	text-align:center;
+	font-weight:bolder;
+	z-index: 99;
+}
+.btn3{
+	width:80%;
+	height:6%;
+	position: absolute;
+	top:68%;
+	left:10%;
+	font-size:0.86em;
+	padding-top:0.8%;
+}
+.btn{
+	display: inline-block;
+	width:18%;
+	height:4;
+	font-size: 16px;
+	color:white;
+	position:absolute;
+	top:62%;
+}
+.prev{
+	left:24%;
+}
+.next{
+	right:24%;
+}
+.list{
+	width:82%;
+	height:36%;
+	position:absolute;
+	left:10%;
+	top:25%;
+	font-size:14px;
+	color:white;
+}
+#page ul{
+	list-style: none;
+	float:left;
+	overflow:hidden;
+	height:90%;
+}
+.col1{
+	width:17%;
+}
+.col2{
+	width:18%;
+}
+.col3{
+	width:36%;
+}
+.col4{
+	width:26%;
+}
+.list li{
+	width:100%;
+	height:10.8%;
+	text-align:center;
+}
+.list span{
+	display: inline-block;
+	text-align: center;
+	font-weight:bold;
+	font-style: italic;
+}
+.list span:nth-child(1){
+	margin-left:9%;
+}
+.list span:nth-child(2){
+	margin-left:12%;
+}
+.list span:nth-child(3){
+	margin-left:12%;
+}
+.list span:nth-child(4){
+	margin-left:20%;
+}
+.list .number{
+	font-size:16px;
+}

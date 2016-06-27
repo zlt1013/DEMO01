@@ -1,0 +1,415 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ul,ol,li{
+	list-style: none;
+}
+html{
+	font-size: 625%;
+}
+body{
+	font-family:"微软雅黑";
+	font-size: 0.14rem;
+	display: none;
+	
+}	
+
+body,html{
+	/* width: 100%; */
+	/* height: 100%; */
+
+}
+.wrap{
+	width: 6.4rem;
+	overflow:hidden;
+}
+.header{
+	width: 6.4rem;
+	height: 0.9rem;
+	background-color:#0259C3;
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	width: 1.3rem;
+	height: 0.48rem;
+	margin-left: 0.25rem;
+	margin-top: 0.2rem;
+	float: left;
+}
+.verticalLine{
+	height: 0.38rem;
+	width: 0rem;
+	margin-left: 0.1rem;
+	margin-top: 0.27rem;
+	border-left:1px solid #95B9E6;
+	float: left;
+}
+.introduce{
+	position: absolute;
+	left: 1.8rem;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	float: left;
+}
+.beingWeb{
+	font-size: 0.18rem;
+	color: #fff;
+}
+.company{
+	font-size: 0.14rem;
+	color: #fff;
+}
+.nav{
+	width: 6.4rem;
+	height: 0.65rem;
+	background-color: #E9E9E9;
+}
+.nav li{
+	float: left;
+	width: 0.90rem;
+	height: 0.62rem;
+	margin: 0rem 0.08rem;
+	line-height: 0.65rem;
+	text-align: center;
+}
+.nav a{
+	font-size: 0.24rem;
+	color: #333;
+}
+.current{
+	border-bottom: 0.03rem solid #0259C3;
+}
+.nav .current a{
+	color: #0159C3;
+}
+/* 导航结束 */
+.us_title{
+	margin-left: 0.20rem;
+	height: 0.32rem;
+}
+.tit_posa{
+	margin-top: 0.35rem;
+}
+.orangeLine{
+	float: left;
+	height: 0.32rem;
+	border-left: 0.04rem solid #FF7000;
+}
+.us_hid{
+	visibility:hidden;
+}
+.us_tit_txt{
+	float: left;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	margin-left: 0.18rem;
+}
+.us_tit_txt a{
+	font-size: 0.24rem;	
+}
+.us_longlinePos{
+	margin-top: 0.16rem;
+}
+.us_longline{
+	border-bottom: 0.02rem solid #E5E5E5;
+	width: 6.4rem;
+}
+.us_introTxt{
+	width: 5.9rem;
+	margin-left: 0.20rem;
+	margin-top: 0.27rem;
+	color: #999999;
+	font-size: 0.16rem;
+	text-indent: 2em;
+}
+.tit_posb{
+	margin-top: 0.45rem;
+}
+.us_team{
+	height: auto;
+}
+.us_men{
+	margin-left: 0.27rem;
+	margin-top: 0.20rem;
+}
+.us_menImg{
+	float: left;	
+}
+.us_menImg img{
+	width: 1.08rem;
+}
+.us_menTxt{
+	margin-left: 0.40rem;
+	margin-top: 0.10rem;
+
+	float: left;
+	width: 4.4rem;
+	padding-bottom: 0.25rem;
+	
+	
+}
+.us_name{
+	width: 1.08rem;
+	text-align: center;
+}
+.us_menIntro{
+	margin-top: 0.05rem;
+	font-size: 0.12rem;
+	color: #999;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.us_menTitle{
+	font-size: 0.16rem;
+}
+.us_shortline{
+	margin-top:0.15rem;
+	border-bottom: 0.02rem solid #E5E5E5;
+	width: 6.2rem;
+	clear: both;
+}
+.us_schools {
+	margin-left: 0.27rem;
+	height: 1.8rem;
+	position: relative;
+}
+.us_schools li{
+	float: left;
+}
+.us_schoImg{
+	height: 1.46rem;
+	position: relative;
+	top: 50%;
+	margin-top: -0.73rem;
+	}
+.us_schoImg img{
+	width: 2.1rem;
+}
+.us_schoolInf{
+	margin-left: 0.18rem;
+	width: 3.5rem;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-mos-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+}
+.us_schoolInf p{
+	margin-top: 0.10rem;
+}
+.us_schoolInf h3 a{
+	font-size: 0.20rem;
+	font-weight: normal;
+}
+.us_schoolInf p a{
+	font-size: 0.16rem;
+	color: #999;
+}
+.us_schoolInf span{
+	margin-left: 0.05rem;
+}
+.us_schoolInf img{
+	width: 0.12rem;
+}
+.us_shortlineb{
+	margin-top: 0rem;
+	margin-left: 0.20rem;
+}
+.us_honor img{
+	padding-bottom:0.05rem ;
+}
+.us_honorpic{
+	margin-top: 0.20rem;
+	width: 5.6rem;
+	overflow: hidden;
+	margin: auto;
+}
+.us_honorpic ul{
+	overflow: hidden;
+	padding-bottom: 0.12rem;
+}
+.us_honorpic li{
+	float: left;
+	width: 2.65rem;
+	text-align: center;
+	font-size: 0.14rem;
+}
+.us_honorpic img{
+	width: 2.65rem;
+}
+.us_honorR{
+	margin-left: 0.30rem;
+}
+.us_honorpica{
+	margin-top: 0.20rem;
+}
+.events{
+	margin-top: 0.20rem;
+	margin-left: 0.27rem;
+	color: #333333;
+	line-height:0.30rem ;
+}
+.bottom{
+	width: 6.4rem;
+	height: 0.8rem;
+	background-color:#2a2a2a;
+	position: fixed;
+	bottom: 0;
+	/* text-align: center; */
+}
+.bottom .phone{
+	width: 2.15rem;height: 0.72rem;
+	margin: auto 0.35rem;
+	display: inline-block;
+}
+.phone img ,.qq img{
+	width: 2.15rem;height: 0.72rem;
+}
+.bottom .center{
+	display: inline-block;
+	margin:0rem 0.35rem 0rem 0.15rem;
+	height: 0.8rem;
+}
+
+.bottom .qq{
+	width: 2.15rem;height: 0.72rem;
+	/* margin: auto ; */
+	display: inline-block;
+}
+.us_empty{
+	height: 0.90rem;
+}
+.backtop{
+	/* width: 0.46rem;
+	height: 0.46rem;
+	/*border-radius: 50%;*/
+	position: fixed;
+	bottom:0.4rem;
+	right: 2%;
+	background:url(../img/backtop.png);
+	display: none; */
+}
+/* 我们结束 */
+
+.teacheDetContent{
+	width: 6rem;
+	margin: auto;
+	margin-top: 0.40rem;
+}
+.teacherPic{
+	margin-bottom: 0.20rem;
+}
+.teacherPic img{
+	width: 6rem;
+}
+.tit_posc{
+	margin-left: 0rem;
+	margin-top: 0.20rem;
+}
+.teacheDetContent h2{
+	font-weight: normal;
+	font-size: 0.20rem;
+	color: #333;
+	padding-bottom: 0.17rem;
+}
+.teacheDetContent p{
+	font-size: 0.14rem;
+	color: #656565;
+	line-height: 0.38rem;
+	margin-top: 0.10rem;
+
+}
+.black{
+	color: #000;
+	font-weight: bold;
+}
+.teacherApp{
+	width: 6rem;
+	margin-top: 0.40rem;
+}
+
+/* 招聘 */
+.jobcontent{
+	width: 6rem;
+	height: auto ;
+	margin: auto;
+	overflow: hidden;
+}
+.jobwidth{
+	width: 4.45rem;
+	margin-left: 0.08rem;
+	padding-bottom: 0.05rem;
+}
+.jobcontent li{
+	float: left;
+	height: auto;
+}
+.jobcontent img{
+	width: 1.5rem;
+
+}
+.jobcontent h3 a {
+	font-size: 0.20rem;
+	font-weight: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.jobinf{
+	margin-top:0.05rem;
+	font-size: 0.14rem;
+	color: #999;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.date{
+	font-size: 0.14rem;
+	color: #cbcbcb;
+}
+.jobs{
+	padding: 0.10rem 0;
+}
+.jobs img{
+	width: 1.3rem;
+}
+.backtop{
+	width: 46px;
+	height: 46px;
+	/*border-radius: 50%;*/
+	position: fixed;
+	bottom:10%;
+	right: 2%;
+	background:url(../img/backtop.png);
+	display: none;
+}
+梁聪(1035885780) 2016/6/9 17:43:37
+
+.backtop{
+	width: 46px;
+	height: 46px;
+	/*border-radius: 50%;*/
+	position: fixed;
+	bottom:0.8rem;
+	right: 2%;
+	background:url(../img/backtop.png);
+	display: none;
+}

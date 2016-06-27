@@ -1,0 +1,27 @@
+*{
+			margin: 0;padding: 0;
+		}
+		.bottom{
+			width: 640px;
+			height: 80px;
+			background-color:#2a2a2a;
+			position: fixed;
+			bottom: 0;
+		}
+		.bottom .phone{
+			width: 215px;height: 72px;
+			margin: auto 35px;
+			display: inline-block;
+		}
+		.phone img ,.qq img{
+			width: 215px;height: 72px;
+		}
+		.bottom .center{
+			display: inline-block;
+			margin:0px 35px 0px 15px;
+		}
+		.bottom .qq{
+			width: 215px;height: 72px;
+			margin: auto ;
+			display: inline-block;
+		}

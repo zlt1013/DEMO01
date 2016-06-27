@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>豆瓣东西</title>
+		<link rel="stylesheet" href="css/dongxi.css" />
+		<link rel="stylesheet" href="css/sendMes.css" />
+		<script src="js/jquery-2.2.3.min.js"></script>
+	</head>
+	<body>
+		<div id="dx_top1">
+			<div class="top1_l">
+				<a href="../fyh/web/html/db3_01.html">豆瓣</a>
+				<a href="../sh/sh.html">读书</a>
+				<a href="../ww/ww.html">电影</a>
+				<a href="../xq/xq.html">音乐</a>
+				<!-- <a href="#">同城</a> -->
+				
+				<!-- <a href="#">小组</a> -->
+				<!-- <a href="#">阅读</a> -->
+				<!-- <a href="#">FM</a> -->
+				<a href="#">东西 </a>
+				<a href="../lcg/lcg.html">市集</a>
+				<a href="#">更多</a>
+			</div>
+			<div class="top1_r">
+				<a href="" class="top1_down">下载豆瓣客户端
+					<!--code二维码-->
+					<div id="top1_code">
+						<img src="img/dou_03.png" id="top1_img1" alt="" />	
+						<h1 id="top1_word01">豆瓣</h1>
+						<p id="top1_word02">和有趣的人做有趣的事</p>
+						<img src="img/twoCode_07.png" id="top1_img2" alt="" />
+						<span id="top1_word03">iPhone&middot;Android</span>
+					</div>	
+				</a>
+				<a href="#" id="dx_login2">登陆</a>
+				<a href="#">注册</a>			
+			</div>
+		</div>
+		<!--顶部02-->
+		<div id="dx_top2">
+			<div id="top2_cont">
+				<div class="top2_logo">
+					<img src="img/dongxi.png" alt="logo" />
+				</div>
+				<ul class="top2_nav">
+					<li class="top2_no1">首页</li>
+					<li id="jump_dx">豆列</li>
+					<li id="jump_ht">海淘</li>
+					<li id="jump_tw">图文</li>
+					<li  class="top2_app">App
+						<img src="img/doubandongxi_03.png" alt="" />
+					</li>
+				</ul>
+				<div class="top2_ipt">
+					<input type="text" value="搜下有什么好东西"/>
+					<button class="top2_btn"><img src="img/Magnifier_03.png" alt="" /></button>
+				</div>
+				<div class="dx_loginfu">
+					<div class="dx_login" id="dx_login">
+						+
+					</div>
+					<div id="login_show">
+						<span id="login_close">&times;</span>
+						<h2>欢迎来到豆瓣,请登录</h2>
+						<input type="text" id="login_ipt1" value="手机号/邮箱"/>
+						<input type="text" id="login_ipt2" value="密码"/>
+						<a href="#">帮助</a>
+						<br />
+						<span>验证码:</span><input type="text" id="login_ipt3"/>
+						<p class="login_code" id="login_code">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						
+						</p><a href="#" id="login_codeChange">看不清?</a>
+						<input type="button" id="login_btn" value="登录豆瓣" />
+						<br />
+						<input type="checkbox" class="login_che"/><span class="login_auto">下次自动登录</span>
+						<br />
+						<span>第三方登录<img src="img/third.png" alt="" /></span>
+						<span>|</span>
+						<a href="#">注册豆瓣账号</a>
+					</div>
+				</div>
+				<script src="js/login.js"></script>
+			</div>
+		</div>
+		
+		<div id="controller">
+			<a href="javascript:;" id="good_l" class="good_s">&lt;</a>
+			<a href="javascript:;" id="good_r" class="good_s">&gt;</a>
+			<!--顶部03-->
+			<div id="dx_top03">
+				<div id="top03_cont">
+					<img src="img/top03.jpg"/>
+					<img src="img/top04.jpg"/>
+					<img src="img/top03.jpg"/>
+				</div>
+			</div>
+			
+			<!--大图滚动区域-->
+			<div id="dx_show">
+				<ul class="show1_nav">
+					<li>女装</li>
+					<li>女鞋</li>
+					<li>男装</li>
+					<li>男鞋</li>
+					<li>箱包</li>
+					<li>配饰</li>
+					<li>家居装饰</li>
+					<li>美妆</li>
+					<li>美食</li>
+					<li>数码</li>
+					<li>户外/运动</li>
+					<li>礼物</li>
+					<li>日用百货</li>
+				</ul>
+				<div class="show1_total">
+					<div class="show_top">形形色色 随你选择
+						<i class="show_topW">所在地:</i>
+						<select  id="citySel01">
+							<option value="">请选择</option>
+							<option value="0">北京</option>
+							<option value="1">山东</option>
+							<option value="2">江苏</option>
+							<option value="3">上海</option>
+							<option value="4">广州</option>
+						</select>
+						<select  id="citySel02">
+							<option value="0">请选择</option>
+						</select>
+					</div>
+					
+					<div id="show_outer">
+						<div id="show_inner" style="left:-786px;">
+							<img src="img/5.jpg" alt="1" />
+							<img src="img/1.jpg" alt="1" />
+							<img src="img/2.jpg" alt="2" />
+							<img src="img/3phone.jpg" alt="3" />
+							<img src="img/4.jpg" alt="4" />
+							<img src="img/5.jpg" alt="5" />
+							<img src="img/1.jpg" alt="5" />
+						</div>
+						<div id="buttons">
+					        <span index="1" class="on"></span>
+					        <span index="2"></span>
+					        <span index="3"></span>
+					        <span index="4"></span>
+					        <span index="5"></span>
+					    </div>
+				    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+				    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+					</div>
+					
+				</div>
+			</div>
+		<!--引入script-->
+		
+				
+<!--商品详情展示-->
+		
+	<div id="dx_good">
+		
+		<div id="dx_goodinner">
+			<div id="dx_01">
+				<div id="good01" >
+					<dl>
+						<dt>
+							<div id="dl_join" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>MANGO女装2016春夏|刺绣棉质女衬衫63015571|吊牌399</dd>
+						<dd><img src="img/head1.png" alt="" />
+							优雅小姐
+							<span>推荐</span>
+						</dd>
+					</dl>
+					<p>加入豆列 1  喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good02" >
+					<dl>
+						<dt>
+							<div id="dl_join02" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>Daniel Wellington 丹尼尔&middot;惠灵顿 瑞典品牌 Class系列 玫瑰...</dd>
+						<dd><img src="img/head2.png" alt="" />
+							nannan梦
+							<span>推荐</span>
+						</dd>
+					</dl>
+					<p> 喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good03" >
+					<dl>
+						<dt>
+							<div id="dl_join03" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>【颜鸾书】小书签~毛笔手书 内容可定制 十张包邮</dd>
+						<dd><img src="img/head3.png" alt="" />
+							九思
+							<span>评论</span>
+							<br />
+							<span>"店家自己写的，美美嗒"</span>
+						</dd>
+					</dl>
+					<p>加入豆列 1  喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good04" >
+					<dl>
+						<dt>
+							<div id="dl_join04" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>『泡沫小苏饼』韩国代购正品直邮 Rowky 时尚淑女连衣裙 03.09</dd>
+						<dd><img src="img/head4.png" alt="" />
+							meng
+							<span>推荐</span>
+						</dd>
+						<p> 喜欢 2  评论 1</p>
+					</dl>
+				</div>
+				
+				<div id="good05">
+					<dl>
+						<dt>
+							<div id="dl_join05" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>2015春欧美百搭苹果领打底衬衫性感帅气白衬衣女长袖修身口袋韩版</dd>
+						<dd><img src="img/head5.png" alt="" />
+							夏有乔木
+							<span>评论</span>
+							<br />
+							<span>"去年毕业的时候买了一黑一白 然后宿舍的姑娘基本都入了 很好穿 不是纯棉 布料舒服 有垂..."</span>
+						</dd>
+						<p>加入豆列 1  喜欢 1  评论 1</p>
+					</dl>
+				</div>
+				
+				<div id="good06">
+					<dl>
+						<dt>
+							<div id="dl_join06" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>Vintage Pocket Watch Case Necklace in Sterling Silver Rose ...</dd>
+						<dd><img src="img/head6.png" alt="" />
+							yaya
+							<span>评论</span>
+							<br />
+							<span>"好好看。现在装着一堆古董表的齿轮出街觉得好萌。以后装着一堆碎电子元件出街也会不会..."</span>
+						</dd>
+						<p>加入豆列 1  喜欢 1  评论 1</p>
+					</dl>
+				</div>
+
+			</div>
+			
+			<div id="dx_02">
+				<div id="good01" >
+					<dl>
+						<dt class="good_add1">
+							<div id="dl_join" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>MANGO女装2016春夏|刺绣棉质女衬衫63015571|吊牌399</dd>
+						<dd><img src="img/head1.png" alt="" />
+							优雅小姐
+							<span>推荐</span>
+						</dd>
+					</dl>
+					<p>加入豆列 1  喜欢 1  评论 1</p>
+				</div>
+				<div id="good02" >
+					<dl>
+						<dt class="good_add2">
+							<div id="dl_join02" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>Daniel Wellington 丹尼尔&middot;惠灵顿 瑞典品牌 Class系列 玫瑰...</dd>
+						<dd><img src="img/head2.png" alt="" />
+							nannan梦
+							<span>推荐</span>
+						</dd>
+					</dl>
+					<p> 喜欢 1  评论 1</p>
+				</div>
+				<div id="good03" >
+					<dl>
+						<dt class="good_add3">
+							<div id="dl_join03" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>【颜鸾书】小书签~毛笔手书 内容可定制 十张包邮</dd>
+						<dd><img src="img/head1.png" alt="" />
+							九思
+							<span>评论</span>
+							<br />
+							<span>"店家自己写的，美美嗒"</span>
+						</dd>
+					</dl>
+					<p>加入豆列 1  喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good04" >
+					<dl>
+						<dt class="good_add4">
+							<div id="dl_join04" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>『泡沫小苏饼』韩国代购正品直邮 Rowky 时尚淑女连衣裙 03.09</dd>
+						<dd><img src="img/head4.png" alt="" />
+							meng
+							<span>推荐</span>
+						</dd>
+						<p> 喜欢 2  评论 1</p>
+					</dl>
+				</div>
+				
+				<div id="good05">
+					<dl>
+						<dt class="good_add6">
+							<div id="dl_join05" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>2015春欧美百搭苹果领打底衬衫性感帅气白衬衣女长袖修身口袋韩版</dd>
+						<dd><img src="img/head2.png" alt="" />
+							夏有乔木
+							<span>评论</span>
+							<br />
+							<span>"去年毕业的时候买了一黑一白 然后宿舍的姑娘基本都入了 很好穿 不是纯棉 布料舒服 有垂..."</span>
+						</dd>
+						<p>加入豆列 1  喜欢 1  评论 1</p>
+					</dl>
+				</div>
+				
+				<div id="good06">
+					<dl>
+						<dt>
+							<div id="dl_join06" class="dl_join">
+								<span class="join01">加入豆列</span>
+								<span class="join02"><img src="img/heart.png" alt="" /></span>
+							</div>
+						</dt>
+						<dd>Vintage Pocket Watch Case Necklace in Sterling Silver Rose ...</dd>
+						<dd><img src="img/head1.png" alt="" />
+							yaya
+							<span>评论</span>
+							<br />
+							<span>"好好看。现在装着一堆古董表的齿轮出街觉得好萌。以后装着一堆碎电子元件出街也会不会..."</span>
+						</dd>
+						<p>加入豆列 1  喜欢 1  评论 1</p>
+					</dl>
+				</div>
+				
+			</div>
+			
+			<div id="dx_01">
+				<div id="good01" >
+					<dl>
+						<dt></dt>
+						<dd>MANGO女装2016春夏|刺绣棉质女衬衫63015571|吊牌399</dd>
+						<dd><img src="img/head1.png" alt="" />
+							优雅小姐
+							<span>推荐</span>
+						</dd>
+					</dl>
+					<p>加入豆列 1  喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good02" >
+					<dl>
+						<dt></dt>
+						<dd>Daniel Wellington 丹尼尔&middot;惠灵顿 瑞典品牌 Class系列 玫瑰...</dd>
+						<dd><img src="img/head2.png" alt="" />
+							nannan梦
+							<span>推荐</span>
+						</dd>
+					</dl>
+					<p> 喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good03" >
+					<dl>
+						<dt></dt>
+						<dd>【颜鸾书】小书签~毛笔手书 内容可定制 十张包邮</dd>
+						<dd><img src="img/head1.png" alt="" />
+							九思
+							<span>评论</span>
+							<br />
+							<span>"店家自己写的，美美嗒"</span>
+						</dd>
+					</dl>
+					<p>加入豆列 1  喜欢 1  评论 1</p>
+				</div>
+				
+				<div id="good04" >
+					<dl>
+						<dt></dt>
+						<dd>『泡沫小苏饼』韩国代购正品直邮 Rowky 时尚淑女连衣裙 03.09</dd>
+						<dd><img src="img/head4.png" alt="" />
+							meng
+							<span>推荐</span>
+						</dd>
+						<p> 喜欢 2  评论 1</p>
+					</dl>
+				</div>
+				
+				<div id="good05">
+					<dl>
+						<dt></dt>
+						<dd>2015春欧美百搭苹果领打底衬衫性感帅气白衬衣女长袖修身口袋韩版</dd>
+						<dd><img src="img/head5.png" alt="" />
+							夏有乔木
+							<span>评论</span>
+							<br />
+							<span>"去年毕业的时候买了一黑一白 然后宿舍的姑娘基本都入了 很好穿 不是纯棉 布料舒服 有垂..."</span>
+						</dd>
+						<p>加入豆列 1  喜欢 1  评论 1</p>
+					</dl>
+				</div>
+				
+				<div id="good06">
+					<dl>
+						<dt></dt>
+						<dd>Vintage Pocket Watch Case Necklace in Sterling Silver Rose ...</dd>
+						<dd><img src="img/head6.png" alt="" />
+							yaya
+							<span>评论</span>
+							<br />
+							<span>"好好看。现在装着一堆古董表的齿轮出街觉得好萌。以后装着一堆碎电子元件出街也会不会..."</span>
+						</dd>
+						<p>加入豆列 1  喜欢 1  评论 1</p>
+					</dl>
+				</div>
+
+			</div>
+			
+		</div>
+	
+	</div>
+	<script src="js/goodqh.js"></script>
+	<div class="dx_more"><a href="###">点击加载更多...</a></div>
+	
+		<!--controller-->
+		
+	<!--豆列模块-->
+	<p class="fashWord">豆列</p>
+	<div id="dl_fashion">
+		<div class="fashTop">
+			<div class="actTime">
+				<span class="actWarn">亲 抓紧啊 </span>
+				<span>距活动结束:</span>
+				<span id="actDay"></span>
+				<span>天</span>
+				<span id="actHour"></span>
+				<span>时</span>
+				<span id="actMin"></span>
+				<span>分</span>
+				<span id="actSec"></span>
+				<span>秒</span>
+				<span id="actMilli"></span>
+			</div>
+			<p class="fashMore">更多></p>
+		</div>
+		<ul class="dlLeft">
+			<li>
+				<div class="dlLeft_details">
+					<h3>一次远行去见你</h3>
+					<span class="dlLeft_word2">72东西&middot;2 关注</span>
+				</div>
+				<img src="img/dl/17.jpg" alt=""  class="dl_img01"/>
+				<!--<div class="dl_img01"></div>-->
+			</li>
+			<li>
+				<div class="dlLeft_details">
+					<h3>我的包能包装一个宇宙</h3>
+					<span class="dlLeft_word2">32东西&middot;23关注</span>
+				</div>
+				<img src="img/dl/5.jpg" alt="" />
+			</li>
+			<li>
+				<div class="dlLeft_details">
+					<h3>夏日男友</h3>
+					<span class="dlLeft_word2">54东西&middot;45关注</span>
+				</div>
+				<img src="img/dl/1.jpg" alt="" />
+			</li>
+		</ul>
+		<div class="dlCenter" id="dlCenter">
+			<div class="dlCenter_con">
+				<p>一件衣,一条裙</p>
+				<p class="dlCenter_word">35东西&middot;14关注</p>
+			</div>
+			<div id="drag"></div>
+		</div>
+		<div id="dlCenter_big">
+			<div id="dlCenter_bg"></div>
+		</div>
+		<ul class="dlRight">
+			<li>
+				<div>
+					<p><img src="img/dl/dl_03.png" alt="" /></p>
+					<h4>男票让我帮他挑衣服</h4>
+					<span>23东西&middot;1134关注</span>
+				</div>
+				<img src="img/dl/8.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p><img src="img/dl/dl_06.png" alt="" /></p>
+					<h4>少女心1号机</h4>
+					<span>2342东西&middot;5434关注</span>
+				</div>
+				<img src="img/dl/9.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p><img src="img/dl/dl_08.png" alt="" /></p>
+					<h4>Shoegaze</h4>
+					<span>1232东西&middot;3433关注</span>
+				</div>
+				<img src="img/dl/11.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p>04</p>
+					<h4>买衬衫才是正经事</h4>
+					<span>344东西&middot;3643关注</span>
+				</div>
+				<img src="img/dl/10.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p>05</p>
+					<h4>软妹日常用</h4>
+					<span>1234东西&middot;7863关注</span>
+				</div>
+				<img src="img/dl/4.jpg" alt="" />
+			</li>
+		</ul>
+	</div>
+	
+	<!--科技板块-->
+	<div id="dl_tech" class="dl_tech" >
+		<div class="fashTop" id="techTop">
+			<p class="fashMore">更多></p>
+		</div>
+		<ul class="dlLeft">
+			<li>
+				<div class="dlLeft_details">
+					<h3>高Bigger玩意儿</h3>
+					<span class="dlLeft_word2">31东西&middot;5关注</span>
+				</div>
+				<img src="img/dl/18.jpg" alt=""  class="dl_img01"/>
+				<!--<div class="dl_img01"></div>-->
+			</li>
+			<li>
+				<div class="dlLeft_details">
+					<h3>给我的小手找个窝儿</h3>
+					<span class="dlLeft_word2">67东西&middot;16关注</span>
+				</div>
+				<img src="img/dl/15.jpg" alt="" />
+			</li>
+			<li>
+				<div class="dlLeft_details">
+					<h3>让我们一起摇摆</h3>
+					<span class="dlLeft_word2">43东西&middot;19关注</span>
+				</div>
+				<img src="img/dl/19.jpg" alt="" />
+			</li>
+		</ul>
+		<div class="dlCenter" id="techCenter">
+			<div class="dlCenter_con">
+				<p>这些看起来就想买的玩意儿</p>
+				<p class="dlCenter_word">94东西&middot;102关注</p>
+			</div>
+			<div id="drag2"></div>
+		</div>
+		<div id="dlCenter_big2">
+			<div id="dlCenter_bg2"></div>
+		</div>
+		<ul class="dlRight">
+			<li>
+				<div>
+					<p><img src="img/dl/dl2.png" alt="" /></p>
+					<h4>码农生存指南</h4>
+					<span>78东西&middot;2345关注</span>
+				</div>
+				<img src="img/dl/20.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p><img src="img/dl/dl_06.png" alt="" /></p>
+					<h4>孟获&trade;耳机频道1000</h4>
+					<span>765东西&middot;9098关注</span>
+				</div>
+				<img src="img/dl/7.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p><img src="img/dl/dl_08.png" alt="" /></p>
+					<h4>就算是数码白痴也要努力</h4>
+					<span>543东西&middot;3421关注</span>
+				</div>
+				<img src="img/dl/21.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p>04</p>
+					<h4>镜头对面的女孩会扔番茄的...</h4>
+					<span>789东西&middot;5421关注</span>
+				</div>
+				<img src="img/dl/22.jpg" alt="" />
+			</li>
+			<li>
+				<div>
+					<p>05</p>
+					<h4>果壳中的科技</h4>
+					<span>2356东西&middot;895关注</span>
+				</div>
+				<img src="img/dl/23.jpg" alt="" />
+			</li>
+		</ul>
+	</div>
+	
+	
+	<!--海淘板块-->
+	<div id="ht_header">
+		<span class="ht_title01"></span>
+		<span>海淘商品</span>
+		<span>|</span>
+		<span class="ht_title02"></span>
+		<span>海淘社区</span>
+	</div>
+	<div class="haitao">
+		<div id="ht_good">
+			<h3>海淘热门豆列</h3>
+			<div class="ht_but">
+				<span class="ht_position">1</span>
+				<span>/4</span>
+				<span class="pro2" id="pro2"></span>
+				<span class="next2" id="next2"></span>
+			</div>
+			<div id="ht_show">
+				<div id="ht_cont" style="left:-500px;">
+					<!--假的最后一个-->
+					<ul >
+						<li class="ht_imgs">
+							<img src="img/haitao/3.jpg" alt=""  class="ht_img01"/>
+							<img src="img/haitao/25.jpg" alt="" />
+							<img src="img/haitao/3.jpg" alt="" />
+							<img src="img/haitao/4.jpg" alt="" />
+							<img src="img/haitao/5.jpg" alt="" />
+						</li>
+						<li>
+							<p class="dl_title">砸锅卖铁去海淘(:з」∠)</p>
+							<p>世界那么大，我想去海淘...</p>
+							<p class="ht_word">
+								<span class="ht_photo" id="ht_photo2"></span>
+								独角戏
+								<span>创建</span>
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li class="ht_imgs">
+							<img src="img/haitao/1.jpg" alt=""  class="ht_img01"/>
+							<img src="img/haitao/10.jpg" alt="" />
+							<img src="img/haitao/11.jpg" alt="" />
+							<img src="img/haitao/12.jpg" alt="" />
+							<img src="img/haitao/13.jpg" alt="" />
+						</li>
+						<li>
+							<p class="dl_title">日本亚马逊</p>
+							<p>日亚寻宝寻不够!</p>
+							<p class="ht_word">
+								<span class="ht_photo"></span>
+								徒步旅行
+								<span>创建</span>
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li class="ht_imgs">
+							<img src="img/haitao/14.jpg" alt=""  class="ht_img01"/>
+							<img src="img/haitao/15.jpg" alt="" />
+							<img src="img/haitao/16.jpg" alt="" />
+							<img src="img/haitao/17.jpg" alt="" />
+							<img src="img/haitao/21.jpg" alt="" />
+						</li>
+						<li>
+							<p class="dl_title">海淘,这里淘淘那里淘淘</p>
+							<p>海淘回来的东西分享</p>
+							<p class="ht_word">
+								<span class="ht_photo" id="ht_photo2"></span>
+								蒙娜丽莎
+								<span>创建</span>
+							</p>
+						</li>
+						
+					</ul>
+					<ul>
+						<li class="ht_imgs">
+							<img src="img/haitao/2.jpg" alt=""  class="ht_img01"/>
+							<img src="img/haitao/20.jpg" alt="" />
+							<img src="img/haitao/22.jpg" alt="" />
+							<img src="img/haitao/23.jpg" alt="" />
+							<img src="img/haitao/24.jpg" alt="" />
+						</li>
+						<li>
+							<p class="dl_title">霓虹甜食小分队喵</p>
+							<p>美味颜值  霓虹国甜食囤起来~！</p>
+							<p class="ht_word">
+								<span class="ht_photo" id="ht_photo2"></span>
+								taotao
+								<span>创建</span>
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li class="ht_imgs">
+							<img src="img/haitao/3.jpg" alt=""  class="ht_img01"/>
+							<img src="img/haitao/25.jpg" alt="" />
+							<img src="img/haitao/3.jpg" alt="" />
+							<img src="img/haitao/4.jpg" alt="" />
+							<img src="img/haitao/5.jpg" alt="" />
+						</li>
+						<li>
+							<p class="dl_title">砸锅卖铁去海淘(:з」∠)</p>
+							<p>世界那么大，我想去海淘...</p>
+							<p class="ht_word">
+								<span class="ht_photo" id="ht_photo2"></span>
+								独角戏
+								<span>创建</span>
+							</p>
+						</li>
+					</ul>
+					<!--假的第一个-->
+					<ul>	
+						<li class="ht_imgs">
+							<img src="img/haitao/1.jpg" alt=""  class="ht_img01"/>
+							<img src="img/haitao/10.jpg" alt="" />
+							<img src="img/haitao/11.jpg" alt="" />
+							<img src="img/haitao/12.jpg" alt="" />
+							<img src="img/haitao/13.jpg" alt="" />
+						</li>
+						<li>
+							<p class="dl_title">日本亚马逊</p>
+							<p>日亚寻宝寻不够!</p>
+							<p class="ht_word">
+								<span class="ht_photo"></span>
+								徒步旅行
+								<span>创建</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	
+		<!--热门帖子-->
+		<div id="ht_post">
+			<h3>东西海淘热门精选贴  <a href="###"> more+</a></h3>
+			<ul>
+				<li>【商品征集】大家都来分享海淘好商品吧！</li>
+				<li>日亚的注册和下单（多图）</li>
+				<li>【经验】LUSH日本官网购物教程</li>
+				<li>【经验】美亚直邮最新攻略（运费大大的减少了）..</li>
+			</ul>
+		</div>
+	</div>
+	<!--引入海淘大图滚动-->
+	
+	
+	<!--海淘论坛-->
+	<div id="msgBox">
+	    <form>
+	        <h2>来 , 说说你在做什么 , 想什么</h2>
+	
+	        <div>
+	            <input id="userName" class="f-text" value="请输入名字" />
+	            <span>选择head</span>
+	            <p id="face"><img src="img/face1.gif" class="current" /><img src="img/face2.gif" /><img src="img/face3.gif" /><img src="img/face4.gif" /><img src="img/face5.gif" /><img src="img/face6.gif" /><img src="img/face7.gif" /><img src="img/face8.gif" /></p>
+	        </div>
+	        <div><textarea id="conBox" class="f-text"></textarea></div>
+	        <div class="tr">
+	            <p>
+	                <span class="countTxt">还能输入</span><strong class="maxNum">140</strong><span>个字</span>
+	
+	                <input id="sendBtn" type="button" value="" title="快捷键 Ctrl+Enter" />
+	            </p>
+	        </div>
+	    </form>
+	    <div class="list">
+	        <h3><span>大家在说</span></h3>
+	        <ul>
+	            <li>
+	
+	                <div class="userPic"><img src="img/face.gif" /></div>
+	                <div class="content">
+	                    <div class="userName"><a href="javascript:;">小七</a>:</div>
+	                    <div class="msgInfo"> 【商品征集】大家都来分享海淘好商品吧！</div>
+	                    <div class="times"><span>05月01日 15:14</span><a class="del" href="javascript:;">删除</a></div>
+	                </div>
+	
+	            </li>
+	            <li>
+	                <div class="userPic"><img src="img/face.gif" /></div>
+	                <div class="content">
+	                    <div class="userName"><a href="javascript:;">believe</a>:</div>
+	                    <div class="msgInfo">  【经验】丑小鸭海淘记</div>
+	                    <div class="times"><span>05月01日 12:20</span><a class="del" href="javascript:;">删除</a></div>
+	
+	                </div>
+	            </li>
+	            <li>
+	                <div class="userPic"><img src="img/face.gif" /></div>
+	                <div class="content">
+	                    <div class="userName"><a href="javascript:;">徒步旅行</a>:</div>
+	                    <div class="msgInfo">【提问】有没有在海淘过日本的酵素之类的产品啊</div>
+	
+	                    <div class="times"><span>04月30日 12:08</span><a class="del" href="javascript:;">删除</a></div>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="userPic"><img src="img/face.gif" /></div>
+	                <div class="content">
+	                    <div class="userName"><a href="javascript:;">my Sunshine</a>:</div>
+	
+	                    <div class="msgInfo">【拼单】长期日本网站拼单 日亚MUJI乐天FANCL优衣...</div>
+	                    <div class="times"><span>04月29日 16:55</span><a class="del" href="javascript:;">删除</a></div>
+	                </div>
+	            </li>
+	            <li>
+	                <div class="userPic"><img src="img/face.gif" /></div>
+	                <div class="content">
+	
+	                    <div class="userName"><a href="javascript:;">打豆豆</a>:</div>
+	                    <div class="msgInfo">增加了输入字符检测功能，英文/半角为半个字符，汉字/全角为一个字符。</div>
+	                    <div class="times"><span>04月20日 08:30</span><a class="del" href="javascript:;">删除</a></div>
+	                </div>
+	            </li>
+	            <li>
+	
+	                <div class="userPic"><img src="img/face.gif" /></div>
+	                <div class="content">
+	                    <div class="userName"><a href="javascript:;">风行天下</a>:</div>
+	                    <div class="msgInfo">【提问】topshop直邮一个多月没到！联系客服说要调...</div>
+	                    <div class="times"><span>07月03日 20:19</span><a class="del" href="javascript:;">删除</a></div>
+	                </div>
+	
+	            </li>
+	        </ul>
+	    </div>	
+	</div>
+	
+	<!--图文模块-->
+	<div id="tuwen">
+		<p><span>图</span><span>文</span></p>
+		<div class="container">
+			<div><img src="img/tuwen/1.jpg" alt="" />
+				<h6>现在的姑娘们，化妆包里永远差一只口红，我罗列了几只大热的口红试色推荐给大家 1。the saem 按压口红 热门色号05 /06 关于这款口红，很多姑娘...</h6>
+			</div>
+			<div><img src="img/tuwen/2.jpg" alt="" />
+				<h6>夏天要来了~马卡龙的夏天是我们小女森的~~除了短裤短袖裙子凉鞋当然还有我们的指甲油啦~~~</h6>
+			</div>
+			<div><img src="img/tuwen/3.jpg" alt="" />
+				<h6>　本人痘痘肌，而且是那种长痘期不吃任何上火东西按时作息也会长痘的外星人，常年各种心累~虽然这世界上是有神奇的化妆术啦，但是那毕竟只适合“...</h6>
+			</div>
+			<div><img src="img/tuwen/4.jpg" alt="" />
+				<h6>春天来了该出去玩耍了~又该穿的美美哒~美美哒拍照~不管你腿粗腿短腰粗腰细拍照姿势很重要，女屌丝到女神就是一个瞬间的事情 如果想要拍出...</h6>
+			</div>
+			<div><img src="img/tuwen/5.jpg" alt="" />
+				<h6>衬衫连衣裙最适合工作着装，款式选择上可以注意肩膀及腰线的设计，可以帮你修饰手部线条，单穿或者搭配线衫做叠搭都可以。如果觉得过于正式的话，在配件的选择上尽量以单色系简约款为主。</h6>
+			</div>
+			<div><img src="img/tuwen/6.jpg" alt="" />
+				<h6>先别看帖子，快看看外面的蓝天白云和春暖花开。错过了清明假期难道还要错过五一吗同学 = _ = 想出去玩的小心脏是不是被勾引地蠢蠢欲动了？ ...</h6>
+			</div>
+			<div><img src="img/tuwen/7.jpg" style="height:400px" />
+				<h6>世界辣么大 我要穿的美美哒，就可以遇到帅锅欧巴</h6>
+			</div>
+			<div><img src="img/tuwen/8.jpg" style="height:410px" />
+				<h6>为了目标伸伸懒腰起床出发喽</h6>
+			</div>
+			<div><img src="img/tuwen/9.jpg"  style="height:470px"/>
+				<h6>世界辣么大 我要穿的美美哒，就可以遇到帅锅欧巴 为了目标伸伸懒腰起床出发喽 不过。。。。 问题来了，穿什么能衬托气质、身材和美貌呢？好纠...</h6>
+			</div>
+			<div><img src="img/tuwen/10.jpg" alt="" />
+				<h6>Dear 宝宝们(づ｡◕‿‿◕｡)づ 你们是不是都有一颗当网红的心呢？！可惜没那个脸蛋，没那个身材，主要是没钱！整不起容T_T ...</h6>
+			</div>
+			<div><img src="img/tuwen/11.jpg"  />
+				<h6>嘿小老婆们，一溜烟又要跨年了啊，我怎么又老了啊,可我怎么还没嫁出去啊！晚婚晚育女壮年不要闹好嘛→_→我不要一个人静静的狗带（本文不包含任...</h6>
+			</div>
+			<div><img src="img/tuwen/12.jpg" alt="" />
+				<h6>之前去上海买的，10几块钱，喜欢它盒子的设计，外观100分，但是不好涂抹，需要用手指或者唇刷，感觉不方便。唇膏本身略油腻，感觉偷吃了一样。</h6>
+			</div>
+			<div><img src="img/tuwen/13.jpg" alt="" />
+				<h6>本着“没有霸道总裁宠爱，我就是我自己的董事长”这个原则，往年双十一都会乱买一通，买回来就后悔！今年，我决定理性一把——买我所爱，甩开白菜，安利无害，听我道来！</h6>
+			</div>
+			<div><img src="img/tuwen/14.jpg" alt="" />
+				<h6>最近感觉全身别扭液，浑身不舒服液，想要发泄液，要去找漂酿姐姐做做大保健那⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ 大保健？大保健就是...</h6>
+			</div>
+			<div><img src="img/tuwen/15.jpg" style="height:378px" />
+				<h6>双十一大战已经提前进入“倒计时”，市场的热情已经按捺不住，我们的热情也要按捺不住了。 双十一的幅度那么的夸张让我们怎么按捺的住。...</h6>
+			</div>
+			<div class="tw16"><img src="img/tuwen/16.jpg" alt="" />
+				<h6>话说最近看了一个在youtube很热的视频，一个长了较为严重的痤疮素颜美女。 然后被大家指责很丑，然后她化了妆超美，大家又指责她是因为化妆的关系...</h6>
+			</div>
+		</div>	 
+	</div>
+
+	<!--豆瓣底端-->
+	<div id="dx_bot">
+		<span class="dx_botL">&copy; 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司</span>
+		<span class="dx_botR">
+			<a href="#">关于豆瓣</a>
+			<span>&middot;</span>
+			<a href="#">在豆瓣工作</a>
+			<span>&middot;</span>
+			<a href="#">联系我们</a>
+			<span>&middot;</span>
+			<a href="#">免责声明</a>
+			<span>&middot;</span>
+			<a href="#">帮助中心</a>
+			<span>&middot;</span>
+			<a href="#">移动应用</a>
+			<span>&middot;</span>
+			<a href="#">豆瓣广告</a>
+		</span>
+	</div>
+	
+	
+	
+	
+	
+	
+	<!--controller结尾处-->
+		</div>
+		
+		
+		<p id="Top_back">Top</p>
+		<script src="js/top_back.js"></script>
+	</body>
+	<script src="js/top_run.js"></script>
+	<script src="js/haitao_run.js"></script>
+	<script src="js/sendMes.js"></script>
+	
+</html>
+
+
+
+
+
+
+
+
+

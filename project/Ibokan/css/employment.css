@@ -1,0 +1,169 @@
+*{margin: 0;padding: 0;}
+body,html{width: 100%;
+}
+html{
+	font-size: 625%;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 0.14rem;
+	display: none;
+	
+}
+#ehead{
+	width: 6.4rem;
+	height: 0.88rem;
+	background: #0259C3;
+}
+#enav{
+	width: 6.40rem;
+	height: 0.65rem;
+	background: #E9E9E9;
+}
+#eshow{
+	width: 6.40rem;
+	background: #FFFFFF;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ul,ol,li{
+	list-style: none;
+}
+
+
+.wrap{
+	width: 100%;
+}
+.header{
+	width: 6.40rem;
+	height: 0.90rem;
+	background-color:#0259C3;
+	overflow: hidden;
+	position: relative;
+}
+.logo{
+	width: 1.30rem;
+	height: 0.48rem;
+	margin-left: 0.25rem;
+	margin-top: 0.20rem;
+	float: left;
+}
+.verticalLine{
+	height: 0.38rem;
+	width: 0rem;
+	margin-left: 0.10rem;
+	margin-top: 0.27rem;
+	border-left:0.01rem solid #95B9E6;
+	float: left;
+}
+.introduce{
+	position: absolute;
+	left: 1.80rem;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	float: left;
+
+}
+.beingWeb{
+	font-size: 0.18rem;
+	color: #fff;
+}
+.company{
+	font-size: 0.14rem;
+	color: #fff;
+}
+.nav{
+	width: 6.40rem;
+	height: 0.65rem;
+	background-color: #E9E9E9;
+}
+.nav li{
+	float: left;
+	width: 0.90rem;
+	height: 0.62rem;
+	margin: 0rem 0.08rem;
+	line-height: 0.65rem;
+	text-align: center;
+}
+.nav a{
+	font-size: 0.24rem;
+	color: #333;
+}
+.current{
+	border-bottom: 0.03rem solid #0259C3;
+}
+.nav .current a{
+	color: #0159C3;
+}
+
+.showen{
+	width: 6.01rem;
+	margin: auto;
+}
+.showen p{
+	margin-top:0.15rem ;
+	font-family: "微软雅黑";
+}
+.showen p:nth-child(1){
+	font-size: 0.30rem;
+	color: #333333;
+}
+.showen p:nth-child(2){
+	font-size: 0.18rem;
+	color: #656565;
+}
+.showen p:nth-child(3){
+	font-size: 0.18rem;
+	color: #656565;
+}
+.showen p:nth-child(4){
+	width: 6.01rem;
+	height: 3.32rem;
+}
+.pic img{
+	width: 6.01rem;
+	height: 3.32rem;
+}
+.showen p:nth-child(5){
+	font-size: 0.30rem;
+	color: #333333;
+}
+.showen p:nth-child(6){
+	font-size: 0.14rem;
+	color: #656565;
+	line-height: 0.30rem;
+}
+.zw{
+	width: 6.40rem;
+	height: 0.80rem;
+}
+.bottom{
+	width: 6.40rem;
+	height: 0.80rem;
+	background-color:#2a2a2a;
+	position: fixed;
+	bottom: 0;
+}
+.bottom .phone{
+	width: 2.15rem;height: 0.72rem;
+	margin: auto 0.35rem;
+	display: inline-block;
+}
+.phone img ,.qq img{
+	width: 2.15rem;height: 0.72rem;
+}
+.bottom .center{
+	height: 0.8rem;
+    display: inline-block;
+	margin:0rem 0.35rem 0rem 0.15rem;
+}
+.bottom .qq{
+	width: 2.15rem;height: 0.72rem;
+	margin: auto ;
+	display: inline-block;
+}

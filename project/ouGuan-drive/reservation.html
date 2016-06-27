@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">		
+		<title>预约</title>
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" href="css/style2.css" />
+	</head>
+	<body>
+		<div id="page">
+			<img src="img/logo.png" id="logo" alt="" />
+			<img src="img/title1.png" class="title1" alt="" />
+			<img src="img/line.png" class="line1" alt="" />
+			<img src="img/word2.png" class="word2" alt="" />
+			<input type="text" id="ipt1" class="ipt" name="name" placeholder="填写姓名" />
+			<input type="text" id="ipt2" class="ipt" name="mobile" placeholder="手机号码" />
+			<img src="img/word3.png" class="word3" alt="" />
+			<img src="img/line.png" class="line2" alt="" />
+			<input type="button" id="btn3" class="ipt" value="确认提交 >" /> 
+			<input type="button" id="btn4" class="ipt" value="活动详情 >"/>
+			<input type="button" id="btn5" class="ipt" value="查看获奖名单 >" />
+			
+			<div id="ball"></div>
+		</div>
+	<script>
+		
+	</script>
+	<script type="text/javascript">
+		//zoom响应式管理
+			$(document).ready(function(){
+				window.onload = function(){
+					var wid = document.documentElement.clientWidth;
+					var scale = wid/640;
+					document.body.style.zoom = scale;
+				}
+				window.onresize = function(){
+					var wid = document.documentElement.clientWidth;
+					var scale = wid/640;
+					document.body.style.zoom = scale;
+				}
+				$("#btn3").click(function(){
+					var x = {"name":$("#ipt1").val(),"mobile":$("#ipt2").val()}
+					$.ajax({
+						type:"post",
+						url:"http://sjz.bokanedu.com/tgr/api/?day=52&&type=og",
+						data:x,	  //data已经在URL中传递，无需再写data
+						// dataType:"json",		//并不是JSON格式
+						success:function(d){
+							var data = eval('('+d+')');
+							console.log(data.msg);	
+							alert(''+data.msg+'')		//将数据输出
+							if(data.msg=='注册成功'){
+								window.location.href = "submitSuccess.html";		//提交成功
+							}
+						},
+						error:function(){
+							alert("error");
+						}
+					});
+				});
+				$("#btn4").on("click",function(){
+					window.location.href = "activityDetail.html";
+				});
+				$("#btn5").on("click",function(){
+					window.location.href = "listAward.html";
+				});
+			});
+			
+	</script>
+	</body>
+</html>

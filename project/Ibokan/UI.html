@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UI</title>
+	<meta name="viewport" content="width=device-width, height=device-width,initial-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/UI.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/backtop-kdj.js"></script>
+	 <script type="text/javascript">
+		$(document).ready(function(){
+			var wid = document.documentElement.clientWidth;
+			var newfs = wid*100/640;
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = newfs+"px";
+			$(".wrap").css({display:"block"});
+			
+		})
+		$(window).resize(function(){
+		  	var wid = document.documentElement.clientWidth;
+			var newfs = wid*100/640;
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = newfs+"px";
+			$(".wrap").css({display:"block"});
+			
+		});
+		</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<a href="index.html"><img class="logo" src="img/logo.png"></a>
+			<div class="verticalLine"></div>
+			<div class="introduce">
+				<p><a href="###" class="beingWeb">北京官网</a></p>
+				<p><a href="###" class="company" >蓝色光标集团旗下企业</a></p>
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="H5.html">HTML5</a></li>
+				<li><a href="IOS.html">iOS</a></li>
+				<li><a href="Android.html">Android</a></li>
+				<li class="current"><a href="UI.html">UI</a></li>
+			</ul>
+		</div>	
+	
+	<div class="prospect">
+		<div class="title_1">
+			<p class="line1"></p>
+			<span>UI行业前景</span>
+			<p class="line2"></p>
+		</div>
+		<div class="contant">
+			<p class="prospect1">
+				随着iOS行业持续火爆，面临的人才缺口也将进一步扩大，据权威网站数据分析近半年前端工程师面邀数可达到8.6万个，
+				数据显示，北上广深圳一线城市，掌握HTMLCSS和Js等高级开发技能的人才，年薪在20-50万之间。
+			</p>
+		</div>
+		<div class="sample"></div>
+	</div>
+	<div class="UIbig_shot">
+		<div class="title_1">
+			<p class="line1"></p>
+			<span>UI名师大咖</span>
+			<p class="line2"></p>
+		</div>
+		<ul class="big_shot">
+			<a href=""><li class="big_shot1"></li></a>
+			<li class="word">
+				<p>张伟，美国Adobe认证高级讲师，曾任清华美院设计讲师，现任博看文思UI交互设计高级讲师，
+					15年国家级设计经验，先后为国家知识产权局、清华大学、华东电力大学、中石油、豪顿集团
+					等世界500强企业提供UI设计服务。</p>
+			</li>
+		</ul>
+		<div class="qy">
+			<ul>
+				<a href="http://www.10086.cn/"><li class="CM"></li></a>
+				<a href="http://www.cnpc.com.cn/"><li class="Coil"></li></a>
+				<a href="http://www.sipo.gov.cn/"><li class="CQ"></li></a>
+			</ul>
+			<ul>
+				<a href="http://www.tsinghua.edu.cn/"><li class="QH"></li></a>
+				<a href="http://www.ncepu.edu.cn/"><li class="HB"></li></a>
+				<a href="http://www.howden.com/"><li class="HD"></li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="syllabus">
+		<div class="title_1">
+			<p class="line1"></p>
+			<span>UI课程大纲</span>
+			<p class="line2"></p>
+		</div>
+		<div class="asllyabus"></div>
+	</div>
+	<div class="product">
+		<div class="title_1">
+			<p class="line1"></p>
+			<span>UI学员作品</span>
+			<p class="line2"></p>
+		</div>
+		<div class="production">
+			<a href=""><img class="left"src="img/UI-pad.png"style="width=2.93rem;height=2.22rem;" alt=""/></a>
+			<a href=""><img src="img/UI-lbyw.png"style="width=2.93rem;height=2.22rem;" alt=""/></a>
+			<a href=""><img class="left"src="img/UI-player.png"style="width=2.93rem;height=2.22rem;" alt=""/></a>
+			<a href=""><img src="img/UI-tb.png" style="width=2.93rem;height=2.22rem;"alt=""/></a>
+			<a href=""><img class="left"src="img/UI-kkc.png"style="width=2.93rem;height=2.22rem;" alt=""/></a>
+			<a href=""><img src="img/UI-dl.png" style="width=2.93rem;height=2.22rem;"alt=""/></a>
+		</div>
+	</div>
+	<div class="bottom">
+		<a href="#" class="phone"><img src="img/zx-dianhua.png"></a>
+		<img src="img/center-lyc.gif" class="center">
+		<a href="#" class="qq"><img src="img/zx-qq.png"></a>
+	</div>
+	<!--自适应处理-->
+</div>
+	
+</body>
+</html>

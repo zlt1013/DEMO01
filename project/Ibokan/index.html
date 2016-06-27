@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, height=device-width,initial-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/bottom.css">
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src='js/jquery-1.11.1.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var wid=document.documentElement.clientWidth;
+				var scale=wid/640
+				document.body.style.zoom=scale;
+			$("body").css({display:"block"});
+				
+		})
+		$(window).resize(function(){
+		  	var wid=document.documentElement.clientWidth;
+			var scale=wid/640 
+			// document.body.style.webkitZoom=scale;
+			document.body.style.zoom=scale;
+			$("body").css({display:"block"});
+			
+		});
+		</script>
+</head>
+<body>
+	<div class="header">
+			<a href="index.html"><img class="logo" src="img/logo.png"></a>
+			<div class="verticalLine"></div>
+			<div class="introduce">
+				<p ><a href="###" class="beingWeb">北京官网</a></p>
+				<p ><a href="###" class="company" >蓝色光标集团旗下企业</a></p>
+			</div>
+	</div>
+	<div class="middle">
+		<div id="outer">
+			<div id="inner" style="left:-640px;">
+				<a href="###"><img src="img/3-lyc.png" alt="" ></a>
+				<a href="###"><img src="img/1-lyc.jpg" alt=""></a>
+				<a href="###"><img src="img/2-lyc.jpg" alt=""></a>
+				<a href="###"><img src="img/3-lyc.png" alt=""></a>
+				<a href="###"><img src="img/1-lyc.jpg" alt=""></a>				
+			</div>
+			<ul>
+				<li index="1" class="on"></li>
+				<li index="2"></li>
+				<li index="3"></li>
+			</ul>
+			<div id="left" class="a">&lt;</div>
+			<div id="right" class="a">&gt;</div>
+		</div>
+	</div>
+	<div class="content1">
+		<ol>
+			<li><a href="us.html"><img src="img/nav_1.png">关于我们</a></li>
+			<li><a href="course.html"><img src="img/nav_2.png">课程体系</a></li>
+			<li><a href="teachers.html"><img src="img/nav_3.png">师资阵容</a></li>
+			<li><a href="hj.html"><img src="img/nav_4.png">教学环境</a></li>
+		</ol>
+		<ol>
+			<li><a href="zixun.html"><img src="img/nav_5.png">资讯</a></li>
+			<li><a href="jiuye.html"><img src="img/nav_6.png">就业</a></li>
+			<li><a href="getjob.html"><img src="img/nav_7.png">名企招聘</a></li>			
+		</ol>
+	</div>
+	<div class="content2">
+		<span class="vLine"></span>
+		<span id="title">课程介绍</span>
+		<div class="line"></div>
+		<ol>
+			<li><a href="H5.html"><img src="img/HTML5-lyc.png">HTML5培训</a></li>
+			<li><a href="IOS.html"><img src="img/ios-lyc.png">iOS培训</a></li>
+			<li><a href="Android.html"><img src="img/Android-lyc.png">Android培训</a></li>
+			<li><a href="UI.html"><img src="img/UI-lyc.png">UI交互设计</a></li>
+		</ol>
+	</div>
+	<div class="content3">
+		<span class="vLine"></span>
+		<span id="title">开班信息</span>
+		<a href="#" class="more">+MORE</a>
+		<div class="line"></div>
+		<table>
+			<thead>
+				<tr>
+					<th>开班信息</th>
+					<th>开班时间</th>
+					<th>开班情况</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>HTML5培训强化</td>
+					<td>06月03日</td>
+					<td><a href="#" class="btn">新版抢座</a></td>
+				</tr>
+				<tr>
+					<td>iOS培训强化班</td>
+					<td>06月03日</td>
+					<td><a href="#" class="btn">新版抢座</a></td>
+				</tr>
+				<tr>
+					<td>UI交互设计培训</td>
+					<td>06月03日</td>
+					<td><a href="#" class="btn">新版抢座</a></td>
+				</tr>
+				<tr>
+					<td>UI交互设计培训</td>
+					<td>06月03日</td>
+					<td><a href="#" class="btn">新版抢座</a></td>
+				</tr>
+				<tr>
+					<td>UI交互设计培训</td>
+					<td>06月03日</td>
+					<td><a href="#" class="btn">新版抢座</a></td>
+				</tr>
+			</tbody>			
+		</table>
+	</div>
+	<div class="content4">
+		<span class="vLine"></span>
+		<span id="title">博看师资</span>
+		<a href="#" class="more">+MORE</a>
+		<div class="line"></div>
+		<dl>
+			<dt><img src="img/sz-xuying.png"></dt>
+			<dd>
+				<p><a href="teacherDetail.html">徐赢</a></p>
+				<span>博看文思iOS教学培训中心，北京校区		ios培训经理徐赢，精通Objective-C、Xcode开发工具、MRC、ARC，对MVC模式有深入的了解。 
+				</span>
+			</dd>
+		</dl>
+		<div class="line"></div>
+		<dl>
+			<dt><img src="img/sz-taoguorong.png"></dt>
+			<dd>
+				<p><a href="teacherDetail.html">陶国荣</a></p>
+				<span>陶国荣，博看文思HTML5高级讲师，资深Web技术专家,10余年开发经验，是国内较早专业从事Web开发的一线技术人员和培训讲师。 
+				</span>
+			</dd>
+		</dl>
+		<div class="line"></div>
+		<dl>
+			<dt><img src="img/sz-guotanwei.png"></dt>
+			<dd>
+				<p><a href="teacherDetail.html">郭檀伟</a></p>
+				<span> 博看文思iOS培训中心高级iOS讲师，精iOS游戏开发，对objective-C造诣很深。个人有多款游戏在APPStore上架，并曾参与编写多本iPhone教材。  
+				</span>
+			</dd>
+		</dl>
+	</div>
+	<div class="content5">
+		<span class="vLine"></span>
+		<span id="title">明星学员</span>
+		<a href="#" class="more">+MORE</a>
+		<div class="line"></div>
+		<center class="stu">
+			<a href="employment.html"><img src="img/wd.png"></a>
+			<a href="employment.html"><img src="img/cq.png"></a>
+			<a href="employment.html"><img src="img/yb.png"></a>
+			<a href="employment.html"><img src="img/xd.png"></a>
+			<a href="employment.html"><img src="img/zn.png"></a>
+			<a href="employment.html"><img src="img/sj.png"></a>
+		</center>		
+	</div>
+	<div class="content6">
+		<span class="vLine"></span>
+		<span id="title">博看合作企业</span>
+		<a href="#" class="more">+MORE</a>
+		<div class="line"></div>
+		<center class="imgs">
+			<a href="###"><img src="img/qy_1.png"></a>
+			<a href="#"><img src="img/qy_2.png"></a>
+			<a href="#"><img src="img/qy_3.png"></a>
+			<a href="#"><img src="img/qy_4.png"></a>
+			<a href="#"><img src="img/qy_5.png"></a>
+			<a href="#"><img src="img/qy_6.png"></a>
+			<a href="#"><img src="img/qy_7.png"></a>
+			<a href="#"><img src="img/qy_8.png"></a>
+			<a href="#"><img src="img/qy_9.png"></a>
+			<a href="#"><img src="img/qy_10.png"></a>
+			<a href="#"><img src="img/qy_11.png"></a>
+			<a href="#"><img src="img/qy_12.png"></a>
+			<a href="#"><img src="img/qy_13.png"></a>
+			<a href="#"><img src="img/qy_14.png"></a>
+			<a href="#"><img src="img/qy_15.png"></a>
+		</center>		
+	</div>
+	<div class="content7">
+		<p style="color: #878787;">Copyright © 2009-2015 博看文思 bjbkws.com</p>
+		<p>地址：北京石景山区总工会博看文思</p>
+		<img src="img/backtop.png" id="up">
+	</div>
+	<div class="bottom">
+		<a href="#" class="phone"><img src="img/zx-dianhua.png"></a>
+		<img src="img/center-lyc.gif" class="center">
+		<a href="#" class="qq"><img src="img/zx-qq.png"></a>
+	</div>
+</body>
+</html>
